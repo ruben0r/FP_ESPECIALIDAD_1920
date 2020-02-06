@@ -1,0 +1,13 @@
+Proceso sin_titulo
+	Definir edad Como Entero;
+	Definir genero Como Caracter;
+	Escribir "Introduzca su edad " ;
+	Leer edad ;
+	Escribir "Indique si es hombre o mujer" ;
+	Leer genero;
+	Si (edad >25 ) O (edad <18) O (genero = "mujer") Entonces
+		Escribir " No puede optar a entrar al servicio militar" ;
+	SiNo
+		Escribir "Enhorabuena puede optar a entrar al servicio militar" ;
+	FinSi
+FinProceso

@@ -1,0 +1,20 @@
+Proceso sin_titulo
+	Definir d como Real;
+	Definir a Como Real;
+	Definir b Como Real;
+	Definir c como Real;
+	Escribir "Introduzca el valor elevado al cuadrado " ;
+	Leer a ;
+	Escribir "Introduzca el segundo valor  " ;
+	Leer b ;
+	Escribir "Introduzca el tercer valor" ;
+	Leer c ;
+	Si a = 0 O  b^2 < (4*a*c) Entonces
+		Escribir "No es posible realizar la ecuación porque la raíz queda negativa, solo se podría con números complejos";
+	Sino
+		d <- -b + RC(b^2 - 4*a*c) / 2*a ;
+	Escribir "Un resultado de la ecuación es: " , d ;
+	d <- -b - RC(b^2 - 4*a*c) / 2*a ;
+	Escribir "El otro resultado de la ecuación es: " , d ;
+	FinSi
+FinProceso

@@ -1,0 +1,19 @@
+Proceso sin_titulo
+	Definir horas Como Real;
+	Definir tarifa Como Real;
+	Definir res Como Real;
+	Definir inc Como Real;
+	Escribir "Introduzca la tarifa por hora ";
+	Leer tarifa;
+	Escribir "Introduzca las horas semanales trabajadas" ;
+	Leer horas;
+	inc <- tarifa + tarifa * 0.5 ;
+	Si horas >40 Entonces
+		tarifa <- inc ;
+		Escribir "Cobrará un total de: ", horas * inc ;
+		
+	Sino
+		Escribir "Cobrará un total de: ", horas * tarifa ;
+		
+	FinSi
+FinProceso

@@ -1,0 +1,16 @@
+Proceso sin_titulo
+	Definir clave como Caracter ;
+	Definir usuario como Caracter ;
+	Escribir " Introduzca el nombre de usuario: " ;
+	Leer usuario ;
+	Escribir " Introduzca su contraseña: " ;
+	Leer clave ;
+	Si (usuario = "ADMIN") Y (clave = "123456") Entonces
+		Escribir " Bienvenido Mr. ", usuario ;
+	SiNo 
+		Escribir "El usuario o la contraseña no son correctos" ;
+	FinSi
+	
+	
+	
+FinProceso

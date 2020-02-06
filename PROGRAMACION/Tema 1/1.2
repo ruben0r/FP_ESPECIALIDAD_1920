@@ -1,0 +1,25 @@
+Proceso sin_titulo
+	Definir c1 Como Real;
+	Definir c2 Como Real;
+	Definir h1 Como Real;
+	Definir h2 Como Real;
+	Definir res1 Como Real;
+	Definir res2 Como Real;
+	Escribir "Introduzca el cateto base del primer triángulo ";
+	Leer c1;
+	Escribir "Introduzca la altura del primer triángulo";
+	Leer h1;
+	Escribir "Introduzca el cateto base del segundo triángulo" ;
+	Leer c2;
+	Escribir "Introduzca la altura del segundo triángulo";
+	Leer h2;
+	res1 <- c1 * h1 /2 ;
+	res2 <- c2 * h2 /2 ;
+	Escribir " El área del primer triángulo es: ", res1 ;
+	Escribir " El área del segundo triángulo es: ", res2 ;
+	Si res1 > res2 Entonces
+		Escribir "El primer triángulo es mayor al segundo";
+	SiNo
+		Escribir "El segundo triángulo es mayor al segundo";
+	FinSi
+FinProceso
